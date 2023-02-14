@@ -3,6 +3,19 @@
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import { Alert } from 'flowbite-svelte';
+	import db from '../lib/db-config';
+
+	// $: todo_data = [];
+
+	async function getAllTodo() {
+		let { data: Todo, error } = await db
+		.from('Todo')
+		.select('*');
+
+		if (error) {console.log(error)}
+
+		console.log(Todo);
+	}
 </script>
 
 <svelte:head>
@@ -33,6 +46,8 @@
 			<span class="font-medium">Info alert!</span> Change a few things up and try submitting again.
 		</Alert>
 	</div>
+
+	<button on:click={getAllTodo}>Test</button>
 
 </section>
 
