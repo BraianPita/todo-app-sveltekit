@@ -5,7 +5,14 @@ const config = {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#ff3300',
+        'secondary':'#eee',
+        'textcolor': '#111',
+        'bgcolor': '#eee' 
+      }
+    },
   },
 
   plugins: [

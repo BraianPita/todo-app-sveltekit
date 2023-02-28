@@ -12,7 +12,8 @@ datasource db {
 
 model Todo {
   uid         String  @id @default(cuid())
-  created_at  DateTime
+  created_at  DateTime @default(now())
+  title       String
   description String
   done        Boolean
   due_date    DateTime
