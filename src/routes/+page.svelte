@@ -4,7 +4,7 @@
 	import { Alert } from 'flowbite-svelte';
 
 	import { loadTodos } from '../stores/todoStore';
-	import TodoItem from './TodoItem.svelte';
+	import TodoList from './TodoList.svelte';
 
 	// async function getAllTodo() {
 	// 	let { data: Todo, error } = await db
@@ -28,7 +28,7 @@
 <section>
 
 	<button on:click={loadTodos}>Test</button>
-	<TodoItem></TodoItem>
+	<TodoList />
 
 </section>
 

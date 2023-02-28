@@ -21,13 +21,13 @@
 		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 dark:text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
 	  </Button>
 	  <div class="hidden relative md:block">
-		<div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+		<div class="text-bgcolor flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
 		  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 dark:text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
 		</div>
 		<Input id="search-navbar" class="pl-10 bg-transparent placeholder:text-gray-300 outline-slate-300x" placeholder="Search..." />
 	</div>
 	
-	<button class="ml-2 h-fit my-auto p-1 rounded-md bg-black bg-opacity-0 hover:bg-opacity-20"><Plus/></button>
+	<button class="text-bgcolor ml-2 h-fit my-auto p-1 rounded-md bg-black bg-opacity-0 hover:bg-opacity-20"><Plus/></button>
 	<Tooltip class="ml-[-1000px] transition-all duration-[0s] delay-1000" arrow={false} placement="bottom">Add task</Tooltip>
 	  <NavHamburger on:click={toggle} />
 	</div>

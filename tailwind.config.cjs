@@ -8,6 +8,7 @@ const config = {
     extend: {
       colors: {
         'primary': '#ff3300',
+        'primarylight': '#ff5227',
         'secondary':'#eee',
         'textcolor': '#111',
         'bgcolor': '#eee' 
